@@ -10,6 +10,8 @@ import { Directive, ElementRef, inject, input } from "@angular/core";
 })
 
 export class SafeLinkDirective{
+    //queryParam = input('my-app', {alias: 'appSafeLink'}); you could use an alias to set this attribute with the same name as the directive in the template;
+
     queryParam = input('my-app');
 
     private hostElement = inject<ElementRef<HTMLAnchorElement>>(ElementRef);
